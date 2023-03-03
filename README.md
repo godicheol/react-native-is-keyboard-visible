@@ -7,6 +7,7 @@ function App(props) {
     const [isTyping, setTyping] = React.useState(Keyboard.isVisible());
 
     ...
+
     useEffect(function() {
         // mount
         const removeEvent = isKeyboardVisible(function(e) {
@@ -18,7 +19,7 @@ function App(props) {
             removeEvent();
         }
     }, []);
+
     ...
-    
 }
 ```
